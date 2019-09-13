@@ -1,0 +1,32 @@
+particiones primarias 
+
+el primero de 5gb:
+4 gb              1gb
+ds1               ds2
+/discogrande      /discochico
+
+
+el segundo de 5gb:
+2gb               3gb
+dsb              dsb
+/DeDos            /DeTres
+
+ayuda: +4G
+
+fdisk
+sudo fdisk/dev/sda
+sudo fdisk/dev/sdb
+m
+n van 4 enters
++2G
+w
+mkfs
+man mkfs
+sudo mfks.ext3
+sudo mfks.ext3 /dev/sda
+sudo mfks.ext3 /dev/sdb
+
+
+
+
+lsblk -fm comprobar si se logro la particion, seguido de esto se hace un tree
