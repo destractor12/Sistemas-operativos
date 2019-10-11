@@ -1,0 +1,43 @@
+cpu 
+registros cpu 
+cache 	L1	64K	86000 MB/s
+	L2	256K	46000 MB/s
+	L3	3072K	22000 MB/s
+
+RAM: 		4004	7500  MB/s			esta limitada
+
+Disco: 	7200rpm el mas rapido (mecánico)
+	SSD es 30 veces mas rápidas que las mecánicas
+	en el momento en que se queda la Ram sin espacio, se trabaja con la parte vitual del disco rigido a modo de ayuda.
+	averiguar diferencia entre memorias SSD y SSD M.2
+	hay una parte en el disco que es la que almacena la configuración de lectura y escritura.
+	trabajan con datos binarios y con masterbootrecords, entre otros
+	
+F.A.T Fail allocation table
+
+en linux puedo tocar las carpetas propias pero necesito permisos para escribirlas, en window es lo contrario
+
+disco+dirección
+
+raid: 	tipo de memoria fija (Clonación de disco(Backup))
+					
+				  RAID 1+0
+
+
+			disco a			disco b
+
+
+			|1|			|2|
+			|3|	   RAID 0	|4|
+			|6|			|5|
+			
+		
+		
+		|1|		|1|	|2|		|2|
+		|3|	RAID 1	|3|	|4|	RAID 1	|4|
+		|6|		|6|	|5|		|5|
+						
+		 A		 C	 B		 D
+
+
+*(codigo linux)lbm(disco+direccion en donde se asigna) me permite agregar o sacar espacio en disco
