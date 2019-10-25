@@ -1,0 +1,13 @@
+grep argentina datosparagrep.csv
+grep brazil datosparagrep.csv
+grep-i brazil datosparagrep.csv
+grep-color brazil datosparagrep.csv
+grep-n brazil datosparagrep.csv
+grep-v brazil datosparagrep.csv
+grep argentina datosparagrep.csv >> losargentinos.txt
+
+1-Mail de wikipedia
+2-Solo las mujeres
+3-Las personas de 45 años
+4-El ID 666 -> ^39
+5-Todos menos los de México
